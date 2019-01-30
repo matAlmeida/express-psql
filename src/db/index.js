@@ -8,11 +8,11 @@ const sequelize = new Sequelize({
     timestamps: true
   },
   dialect: "postgres",
-  database: process.env.PSQL_DATABASE,
-  host: process.env.PSQL_HOST,
-  port: process.env.PSQL_PORT,
-  username: process.env.PSQL_USER,
-  password: process.env.PSQL_PASSWORD,
+  database: process.env.POSTGRES_DATABASE,
+  host: process.env.POSTGRES_HOST,
+  port: process.env.POSTGRES_PORT,
+  username: process.env.POSTGRES_USER,
+  password: process.env.POSTGRES_PASSWORD,
   pool: {
     max: 10,
     min: 0,
