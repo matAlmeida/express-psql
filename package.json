@@ -1,8 +1,8 @@
 {
-  "name": "express-es6",
+  "name": "express-psql",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Simple REST API with Express and Postgres",
+  "main": "server.js",
   "scripts": {
     "clean-past-build": "rm -rf ./dist",
     "build-src": "babel src --out-dir dist/src",
@@ -11,7 +11,14 @@
     "dev-start": "nodemon --exec babel-node server.js",
     "start": "node ./dist/server.js"
   },
-  "author": "",
+  "repository": {
+    "url": "https://github.com/matAlmeida/express-psql.git",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/matAlmeida/express-psql/issues"
+  },
+  "author": "Matheus Almeida <mat.almeida@live.com>",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.2.3",
