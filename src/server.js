@@ -1,6 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
-import Reflection from "./src/controllers/Reflection";
+import Reflection from "./controllers/Reflection";
 
 dotenv.config();
 const app = express();

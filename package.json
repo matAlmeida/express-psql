@@ -5,10 +5,9 @@
   "main": "server.js",
   "scripts": {
     "clean-past-build": "rm -rf ./dist",
-    "build-src": "babel src --out-dir dist/src",
-    "build-server": "babel server.js --out-dir dist",
-    "build": "npm run clean-past-build && npm run build-src && npm run build-server",
-    "dev-start": "nodemon --exec babel-node server.js",
+    "build-src": "babel src --out-dir dist",
+    "build": "npm run clean-past-build && npm run build-src",
+    "dev-start": "nodemon --exec babel-node ./src/server.js",
     "start": "node ./dist/server.js"
   },
   "repository": {
