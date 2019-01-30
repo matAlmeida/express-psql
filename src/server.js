@@ -2,9 +2,10 @@ import express from "express";
 import dotenv from "dotenv";
 import "babel-polyfill";
 
+dotenv.config();
+
 import Reflection from "./controllers/Reflection";
 
-dotenv.config();
 const app = express();
 
 app.use(express.json());
